@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!--En-tête-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aux Gourmandises de Rachel</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <!--Corps du texte-->
+  <body>
+    <div class="overlay"></div> 
+
+    <iframe src="menu-frame.html" scolling="no" style="position: relative"></iframe>
+
+
+    <div class="container">
+      <form post="post" action="/Contact.php">
+        <label for="fname">Nom</label>
+        <input type="text" id="fname" name="Nom" placeholder="Votre Nom">
+    
+        <label for="lname">Prénom</label>
+        <input type="text" id="lname" name="Prénom" placeholder="Votre Prénom">
+
+        <label for="email">Courriel</label>
+        <input type="email" id="email" pattern="+@." size="30" placeholder="Votre courriel" required>
+
+        <label for="phone">Téléphone</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Votre n° de téléphone"required>
+        
+    
+        <label for="Type">Sujet</label>
+        <select id="Type" name="Type">
+          <option value="V1">Patisserie</option>
+          <option value="V2">Gourmandise</option>
+          <option value="V3">Evenement</option>
+          <option value="V4">Autre</option>
+        </select>
+    
+        <label for="Description">Desciption</label>
+        <textarea id="Description" name="Description" placeholder="Comment puis-je vous aider ?" style="height:200px"></textarea>
+    
+        <input type="submit" value="Envoyer demande">
+      
+        <!-- https://lesdocs.fr/envoi-du-contenu-dun-formulaire-vers-un-email/ -->
+      </form>
+    </div>
+    
+  </body>
+</html>

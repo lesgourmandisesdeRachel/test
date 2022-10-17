@@ -3,25 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <img class="img_rouleau" src="Divers/Rouleau.png" alt="" class="logo" />
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <style>
 
-    <nav >
-      <ul style="float: left" class="gauche">
-        <li><a href="patisserie.html">Patisseries</a></li>
-        <li><a href="gourmandies.html">Gourmandises</a></li>
-        <li><a href="evenement.html">Evènements</a></li>
+  :root {
+    --color0: white;
+    --color2: #A48C3F;
+    --color3: black;
+  }
+
+/* Le corps de la page */
+      body {
+        background-size: 20%;
+        font-family: Arial;
+      }
+
+      /* Menu */
+      .img_rouleau {
+        width: 350px;
+        position: relative;
+        left: 50%;
+        margin-left: -175px;
+        margin-top: 0px;
+        padding-top: 5%;
+      }
+
+      .menu {
+        overflow: hidden;
+        display: block;
+        height: 50px;
+        padding-top: 0px;
+        padding-bottom: 0;
+        text-decoration: none;
+        z-index: 3;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: var(--color0);
+        text-align: center;
+        margin-right: 5px;
+        padding: 15px 30px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+        background-color: var(--color2);
+      }
+
+      li a:hover:not(.active) {
+        background-color: var(--color0);
+        color: var(--color2);
+      }
+
+    </style>
+  </head>
+  
+  <body>
+    <a href="index.html" target="_top">
+      <img  class="img_rouleau" src="Divers/Rouleau.png"   alt="Rouleau à patisserie" class="logo" />
+    </a>
+
+    <nav style="position:sticky; top:0px">
+      <ul style="float: left" class="menu gauche">
+        <li><a href="tvx.html" target="_top"> Patisseries</a></li>
+        <li><a href="tvx.html" target="_top">  Gourmandises</a></li>
+        <li><a href="tvx.html" target="_top">  Evènements</a></li>
       </ul>
 
-      <ul style="float: right" class="droite">
-        <li><a class="droite" href="a_propos.html">A propos</a></li>
-        <li><a class="droite"href="contact.html">Contact</a></li>
-        <li><a class="droite"href="me_trouver.html">Où me trouver</a></li>
+      <ul style="float: right" class="menudroite">
+        <li><a class="droite" href="tvx.html" target="_top"> A propos</a></li>
+        <li><a class="droite" href="Contact.html" target="_top"> Contact</a></li>
+        <li><a class="droite" href="trouver.html" target="_top"> Où me trouver</a></li>
       </ul>
     </nav>
-
-    </div>
   </body>
 </html>
