@@ -213,11 +213,12 @@ input[type=submit]:hover {
 .colonne {
   display: inline-block;
   width: 45%;
-  top: 20%;
   background: linear-gradient(to top, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.46));
   border-radius: 25%;
   color: var(--color2);
-  margin-top: 100px;
+  margin-top: -130px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .colonne h1 {
@@ -243,13 +244,8 @@ input[type=submit]:hover {
   ;
 }
 
-.colonne1 {
-  background-color: pink;
-
-}
 
 .colonne2 {
   float: right;
-  background-color: blue;
-  margin-top: 125px;
+  margin-top: -100px;
 }
